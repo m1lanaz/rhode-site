@@ -4,6 +4,7 @@ import Cards from "./Components/TwoColumnSection";
 import CarouselContainer from "./Components/CarouselContainer";
 import ThreePanel from "./Components/ThreePanel";
 import TwoColumnSection from "./Components/TwoColumnSection";
+import Footer from "./Components/Footer";
 
 export default function Home() {
 
@@ -87,6 +88,14 @@ export default function Home() {
     urlLink: "#"
   };
 
+  const twoColumnSectioThreeData = {
+    image: "/Imgs/PromotionalImage5.avif",
+    titleOne: "FOLLOW US",
+    titleTwo: "@RHODE",
+    text: "",
+    url: "",
+    urlLink: "#"
+  };
 
   return (
     <main>
@@ -134,6 +143,10 @@ export default function Home() {
           hasBottomBorder: false,
         }}
       />
+      <section className="border-black border-t-0 md:border-t-2">
+        <TwoColumnSection data={twoColumnSectioThreeData} />
+      </section>
+      <Footer />
     </main>
   );
 }
