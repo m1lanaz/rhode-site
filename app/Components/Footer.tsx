@@ -65,7 +65,7 @@ export default function Footer() {
 
             {/* Bottom section: Full-width on all devices */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 text-center pb-4">
-                <p className="text-sm whitespace-nowrap pb-4">RHODE © 2024</p> {/* Added whitespace-nowrap */}
+                <p className="text-sm whitespace-nowrap">RHODE © 2024</p> {/* Added whitespace-nowrap */}
             </div>
         </footer>
     );
