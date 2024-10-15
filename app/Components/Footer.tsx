@@ -6,8 +6,33 @@ export default function Footer() {
             {/* Top sections: Two divs taking 50% on desktop, stack on mobile */}
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:justify-between md:h-full">
-                    <div className="w-full md:w-1/2 py-8 px-6">
-                        <p className="font-bold">Test</p>
+                    {/* Left side: Newsletter sign up */}
+                    <div className="w-full md:w-1/2 py-8 px-6 border-b-2 md:border-b-0 border-black">
+                        <p className="font-bold uppercase">Newsletter</p>
+
+                        {/* Newsletter sign-up description */}
+                        <div className="mt-4">
+                            <p className="text-sm mb-4">
+                                Stay in touch. Join our newsletter and get 15% off your first order by subscribing.
+                            </p>
+                            
+                            {/* Form container set to 50% width */}
+                            <div className="w-1/2">
+                                <form className="flex items-center border-b border-black">
+                                    <input
+                                        type="email"
+                                        placeholder="Email"
+                                        className="w-full p-2 bg-transparent uppercase tracking-wide focus:outline-none"
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="p-2 uppercase tracking-wide font-bold hover:text-gray-600"
+                                    >
+                                        Join
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="w-full md:w-1/2 py-8 px-6 md:border-l-2 border-black">
@@ -40,7 +65,7 @@ export default function Footer() {
 
             {/* Bottom section: Full-width on all devices */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 text-center pb-4">
-                <p className="text-sm">RHODE © 2024</p>
+                <p className="text-sm whitespace-nowrap pb-4">RHODE © 2024</p> {/* Added whitespace-nowrap */}
             </div>
         </footer>
     );
