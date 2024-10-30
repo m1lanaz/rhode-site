@@ -1,10 +1,16 @@
-import Navbar from "../Components/Navbar";
+// app/shop/page.tsx or app/shop/Shop.tsx (depending on structure)
+"use client";
+import React from 'react';
+import Header from './Header';
+import Navbar from '../Components/Navbar';
 
-export default function Shop() {
+const Shop: React.FC = () => {
+    return (
+        <div>
+          <Navbar/>
+          <Header/>
+        </div>
+    );
+};
 
-  return (
-    <main>
-      <Navbar />
-    </main>
-  );
-}
+export default Shop;
